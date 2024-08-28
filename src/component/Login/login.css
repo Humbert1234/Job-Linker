@@ -1,0 +1,121 @@
+/* ================================LOGIN_STYLE============================================================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    display: flex;
+    height: fit-content;
+    background: #000;
+
+    h2 {
+        margin: 1rem;
+    }
+
+    .login-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-form {
+        width: fit-content;
+        color: #ccc;
+        background: rgba(123, 119, 119, 0.2);
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 1rem;
+    }
+
+    form {
+
+        color: #ccc;
+        display: grid;
+        grid-template-columns: 1fr;
+        line-height: 2rem;
+
+        label {
+            color: black;
+        }
+    }
+
+    .login-form input,
+    select {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background: #000;
+    }
+
+    button {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background: #38b77a;
+    }
+
+    .forgot-password {
+        text-align: right;
+        margin-bottom: 16px;
+    }
+
+    .create-account {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px;
+        background-color: #38b77a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {}
+
+
+
+@media (max-width: 480px) {
+    .login .login-container .login-form input {
+        width: 88%;
+        height: 1px;
+    }
+
+    .login .login-container .login-form select {
+        height: 1px;
+    }
+
+    .login .login-container .login-form button {
+        height: 30px;
+    }
+
+    .login .login-container .login-form {
+        margin: 2rem 0 0 0;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 50%;
+        line-height: 1rem;
+
+        h2 {
+            font-size: 15px;
+        }
+
+
+
+        .create-account {
+            text-align: center;
+            margin-top: 1px;
+        }
+    }
+}

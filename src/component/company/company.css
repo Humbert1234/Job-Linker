@@ -1,0 +1,186 @@
+/* src/components/About.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* src/App.css */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #ccc;
+}
+
+/* Add global styling and layout adjustments */
+
+.about {
+    padding: 50px 20px;
+    background-color: #000;
+
+    .text {
+        margin: 0rem 8rem 2rem 8rem;
+        text-align: center;
+
+        p {
+            align-items: center;
+        }
+    }
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Logo {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
+}
+
+.about .content .about_text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.about .mission,
+.vision,
+.objectives {
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 10px;
+}
+
+.about .mission:hover,
+.vision:hover,
+.objectives:hover {
+    background: rgba(51, 51, 51, 0.9);
+}
+
+.about h3 {
+    margin-bottom: 10px;
+}
+
+/* src/components/Services.css */
+.services {
+    padding: 50px 20px;
+    background-color: #000;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.service-item {
+    background: rgba(51, 51, 51, 0.9);
+    width: 200px;
+    border-radius: 50px;
+    padding: 9rem 2rem 1rem 2rem;
+
+    h3 {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.service-form {
+    display: inline-block;
+}
+
+.service-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.service-form input,
+.service-form select,
+.service-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.service-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about {
+        padding: 0;
+        background-color: #000;
+
+        .text {
+            margin: 0;
+
+            p {
+                margin: 10px 10px 10px 10px;
+                font-size: 12px;
+                width: 95%;
+            }
+        }
+
+        .content {
+            display: inline-block;
+            align-items: center;
+
+            .Logo {
+                margin-left: 1rem;
+                width: 280px;
+                height: 280px;
+            }
+
+            .about_text .mission,
+            .vision,
+            .objectives {
+                margin: 10px 10px 10px 10px;
+                font-size: 12px;
+                width: 80%;
+            }
+        }
+    }
+
+    .services-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+
+        .service-form input,
+        .service-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 93%;
+        }
+
+    }
+}

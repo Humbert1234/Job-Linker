@@ -1,0 +1,68 @@
+/* src/components/Features.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.features {
+    padding: 50px;
+    background-color: #111;
+    color: #fff;
+}
+
+.features h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: rgba(34, 34, 34, .9);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .features {
+        width: fit-content;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    .feature-card {
+        width: fit-content;
+    }
+}

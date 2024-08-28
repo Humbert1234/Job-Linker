@@ -1,0 +1,193 @@
+/* Container for the upload form and job list */
+.Over-content {
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Header for the upload section */
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form container styling */
+.form {
+    background-color: rgba(87, 85, 85, .4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+/* Input and select fields styling */
+.form input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: .1px solid #696767;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+/* Submit button styling */
+.button {
+    width: 100%;
+    background-color: rgba(76, 175, 80, .5);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Job list section styling */
+.job-list {
+    width: 96%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    .job {
+        width: 100%;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+.job-list h3 {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Individual job styling */
+.job-list ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+    background: #000;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 7px;
+        background: rgba(74, 73, 73, 0.44);
+    }
+
+    .apply {
+        margin-top: 1rem;
+        padding: 10px 10px 10px 10px;
+        width: fit-content;
+        background: rgba(76, 175, 80, .5);
+    }
+
+    .btn33 {
+        display: inline;
+        align-items: center;
+        gap: .2rem;
+    }
+}
+
+
+.job h4 {
+    margin: 0 0 10px 0;
+    color: #ccc;
+}
+
+.job p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* Delete button styling */
+.job .delete {
+    font-size: 14px;
+    margin-top: 1rem;
+    padding: 8px 8px 8px 8px;
+    width: fit-content;
+    background: rgba(76, 175, 80, .5);
+}
+
+.job .delete:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .job-list {
+        margin: 0;
+        color: white;
+        width: 90%;
+        background: hsl(0, 0%, 0%);
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
+            li {
+                width: fit-content;
+                display: inline-block;
+                padding: 1rem 1rem 1rem 1rem;
+                background: rgba(74, 73, 73, 0.44);
+
+                h4 {
+                    font-size: 10px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+
+                .btn33 {
+                    display: flex;
+                    align-items: center;
+                    gap: .2rem;
+
+                    .delete {
+                        font-size: 10px;
+                    }
+                }
+
+                .apply {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+
+}

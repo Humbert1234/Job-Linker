@@ -1,0 +1,341 @@
+/* src/components/Hero.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.job-search-form .tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.job-search-form .tabs button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.job-search-form .tabs .active {
+    color: #00FF00;
+}
+
+.form2 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form2 input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.find-btn {
+    background-color: rgba(0, 255, 0, .1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.job-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.job-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-card .job-details span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.job-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.job-actions button {
+    background-color: #00FF00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Body1 */
+
+
+/* ==============================Login and Sign up Home page body=========================================== */
+.perfact {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    padding: 1rem 2rem 1rem 2rem;
+    color: rgba(248, 247, 247, 1);
+
+    .div {
+        margin-top: 4rem;
+        line-height: 2rem;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            width: 500px;
+            line-height: 3rem;
+        }
+
+        p {
+            width: 400px;
+        }
+
+        .div1 {
+            .btn2 {
+                margin-bottom: 2rem;
+                width: 130px;
+                height: 30px;
+                border: none;
+                background: white;
+                color: darkorange;
+            }
+
+            .btn3 {
+                color: #000;
+                margin-bottom: 2rem;
+                width: 130px;
+                height: 30px;
+                border: none;
+                background: #ccc;
+            }
+        }
+
+        div {
+            margin-top: 3rem;
+            line-height: 2rem;
+
+            .start {
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                background-color: rgba(42, 42, 42, 0.7);
+                color: rgba(248, 247, 247, 1);
+                margin-left: 4rem;
+            }
+
+
+        }
+    }
+
+    .work {
+        margin: 4rem 4rem 0 0;
+        width: 400px;
+        height: 400px;
+        border-radius: 18px;
+    }
+}
+
+
+.team {
+    background: #000;
+    padding: 2rem 0 2rem 0;
+
+    div {
+        width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+
+        .trust {
+            color: rgba(248, 247, 247, 1);
+            font-size: 40px;
+            font-weight: 900;
+
+            span {
+                color: darkorange;
+            }
+        }
+
+        p {
+            color: rgba(248, 247, 247, 1);
+            width: 680px;
+        }
+
+        .company {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin: auto;
+            background: white;
+
+            .com_pho {
+                width: 150px;
+                height: 80px;
+            }
+
+            .com_pho1 {
+                width: 150px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .form2 {
+        flex-direction: column;
+    }
+
+    .form2 input,
+    .find-btn {
+        width: 100%;
+    }
+
+    .job-card {
+        max-width: 90%;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .job-card {
+        width: 100%;
+        display: none;
+    }
+
+    .job-card h3 {
+        text-align: center;
+    }
+
+    .job-actions {
+        justify-content: center;
+    }
+
+    .find-btn {
+        width: 100%;
+    }
+
+    .job-search-form .tabs {
+        margin-top: 0;
+        width: fit-content;
+
+        .active {
+            font-size: 10px;
+            width: fit-content;
+        }
+
+        button {
+            font-size: 10px;
+        }
+    }
+
+    .form2 input {
+        width: 91%;
+    }
+
+    .perfact {
+        .work {
+            margin: 0;
+            display: none;
+        }
+
+        .div {
+            width: fit-content;
+            line-height: 2rem;
+
+            h1 {
+                font-size: 15px;
+                width: fit-content;
+                text-align: center;
+            }
+
+            .p {
+                width: fit-content;
+                text-align: center;
+            }
+
+            .div1 {
+                display: flex;
+            }
+
+            .btn3 {
+                color: white;
+            }
+        }
+
+
+    }
+
+
+    .team {
+        div {
+            text-align: justify;
+            width: fit-content;
+
+            p {
+                display: none;
+            }
+
+            .trust {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .company {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0;
+                text-align: justify;
+            }
+        }
+    }
+}

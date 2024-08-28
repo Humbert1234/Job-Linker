@@ -1,0 +1,217 @@
+/* src/components/Header.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*  Normal Home page Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+}
+
+.header .logoim {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header .logo {
+    display: flex;
+    font-size: 24px;
+    color: #00FF00;
+    align-items: center;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    padding: 1rem 5rem 1rem 2rem;
+}
+
+.header nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hide the navigation list and display the hamburger icon on mobile */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Tablet and mobile view */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 5.5rem;
+        margin-left: 10rem;
+        /* Adjust based on your header height */
+        width: 50%;
+        background-color: #000;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header nav ul li {
+        padding: 10px;
+        display: block;
+    }
+}
+
+
+
+/* ==================================== Job Seeker Home page===================================================== */
+
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem 1rem 1rem;
+    align-items: center;
+    background: #000;
+
+    div {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: blue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.Home1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem 1rem 1rem;
+    align-items: center;
+    background: #000;
+
+    p {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        color: white;
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        span {
+            color: blue;
+        }
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 1rem 5rem 1rem 2rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    nav ul li:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .Sign {
+        display: flex;
+        gap: 1rem;
+
+        .but {
+            width: 80px;
+            height: 35px;
+            background: red;
+        }
+    }
+}
+
+.fa-chalkboard-user {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .Logo {
+        h2 {
+            font-size: 15px;
+        }
+    }
+
+    .head {
+        .contact {
+            display: none;
+        }
+    }
+
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .Home1 nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 5.5rem;
+        margin-left: 10rem;
+        /* Adjust based on your header height */
+        left: 0;
+        width: 50%;
+        background-color: #000;
+    }
+
+    .Home1 nav ul {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .Home1 nav ul li {
+        padding: 3px;
+        display: block;
+    }
+}

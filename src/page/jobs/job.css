@@ -1,0 +1,147 @@
+.Job {
+
+    background: #000;
+
+    .JOB {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        color: aliceblue;
+    }
+}
+
+.form1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.form1 input,
+button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    background: #000;
+}
+
+select {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.body {
+    color: white;
+    background: #000;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 2rem 1rem 1rem 1rem;
+        background: #000;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            border: none;
+            padding: 1rem 1rem 1rem 1rem;
+            border-radius: 7px;
+            background: rgba(74, 73, 73, 0.44);
+            align-items: center;
+        }
+
+        .apply {
+            margin-top: 1rem;
+            padding: 10px 10px 10px 10px;
+            width: fit-content;
+            background: rgba(76, 175, 80, .5);
+        }
+
+        .btn33 {
+            display: inline;
+            align-items: center;
+            gap: .2rem;
+
+            .redirect {
+                margin-top: 1rem;
+                padding: 10px 10px 10px 10px;
+                width: fit-content;
+                background: rgba(76, 175, 80, .5);
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.btn11 {
+    background: rgba(76, 175, 80, .5);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .Job {
+        padding: 1rem 1rem 1rem 1rem;
+        background: #000;
+
+        .JOB {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+
+            .form input {
+                width: 92.5%;
+            }
+        }
+    }
+
+    .form1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .body {
+        margin: 0;
+        color: white;
+        background: hsl(0, 0%, 0%);
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
+            li {
+                display: inline-block;
+                padding: 1rem 1rem 1rem 1rem;
+                background: rgba(74, 73, 73, 0.44);
+
+                h3 {
+                    font-size: 10px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+
+                .btn33 {
+                    display: flex;
+                    align-items: center;
+                    gap: .2rem;
+
+                    a {
+                        font-size: 10px;
+                    }
+                }
+
+                .apply {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

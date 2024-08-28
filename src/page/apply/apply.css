@@ -1,0 +1,35 @@
+.JobApplicationForm {
+    margin-top: 5rem;
+
+    .formapply {
+        background-color: rgba(87, 85, 85, .4);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: .1px solid #696767;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background: #000;
+        }
+
+        .submit {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: .1px solid #696767;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background: rgba(76, 175, 80, .5);
+        }
+    }
+}

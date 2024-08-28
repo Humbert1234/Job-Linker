@@ -1,0 +1,100 @@
+/* src/components/Footer.css */
+body {
+    background: #000;
+}
+
+.footer {
+    padding: 50px;
+    background: rgba(123, 119, 119, 0.2);
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 30%;
+    align-items: center;
+
+    ul {
+        margin-top: 2rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        width: 150px;
+        margin-top: 2rem;
+    }
+}
+
+.footer-section h3,
+h2 {
+    margin-bottom: 10px;
+
+
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .footer-section {
+        width: 100%;
+
+        h2,
+        h3,
+        li,
+        ul,
+        p {
+            margin-top: 8px;
+        }
+
+        p {
+            margin-top: 8px;
+            width: 130px;
+        }
+    }
+
+    .footer-content {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,70 @@
+/* src/components/PopularJobs.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popular-jobs {
+    padding: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+.popular-jobs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.jobs-list .job-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.job-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.job-actions button {
+    background-color: rgba(0, 255, 0, .1);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    a {
+        color: #ccc;
+    }
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .job-meta {
+        flex-direction: column;
+    }
+
+    .job-actions {
+        justify-content: center;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .jobs-list .job-item {
+        padding: 15px;
+    }
+
+
+    .job-actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
