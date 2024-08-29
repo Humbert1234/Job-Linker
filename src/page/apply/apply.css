@@ -33,3 +33,32 @@
         }
     }
 }
+
+.job-apply {
+    h3 {
+        text-align: center;
+    }
+
+    .apply {
+        background: rgba(87, 85, 85, .3);
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pending {
+            padding: .5rem;
+            background: rgba(226, 219, 6, .4);
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .job-apply {
+        .apply {
+            margin: 0;
+            background: rgba(226, 219, 6, .1);
+        }
+    }
+}
