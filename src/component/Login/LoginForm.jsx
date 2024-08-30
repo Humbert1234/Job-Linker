@@ -17,6 +17,7 @@ function LoginForm() {
   }
   return (
     <div className="login-form">
+      <h2>Login</h2>
       <h2>Please Enter your Account details</h2>
       <input
         type="email"

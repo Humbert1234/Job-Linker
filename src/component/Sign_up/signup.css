@@ -17,12 +17,13 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 1rem;
     }
 
     .login-form {
         width: fit-content;
         color: white;
-        background: rgba(123, 119, 119, 0.2);
+        background: rgba(123, 119, 119, 0.15);
         display: grid;
         grid-template-columns: 1fr;
         padding: 1rem 2rem 1rem 2rem;

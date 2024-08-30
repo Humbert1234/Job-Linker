@@ -22,7 +22,7 @@ body {
     .login-form {
         width: fit-content;
         color: #ccc;
-        background: rgba(123, 119, 119, 0.2);
+        background: rgba(123, 119, 119, 0.15);
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 6rem;

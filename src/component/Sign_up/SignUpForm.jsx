@@ -16,6 +16,7 @@ function SignUpForm() {
   }
   return (
     <div className="login-form">
+      <h2>Sign Up</h2>
       <h2>Please Enter your Account details</h2>
       <form action="">
         <input type="text" placeholder="Full Name" name="" id="" required />
@@ -35,9 +36,6 @@ function SignUpForm() {
           required
         />
       </form>
-      <div className="forgot-password">
-        <a href="#">Forgot Password</a>
-      </div>
 
       <button onClick={Click}>login</button>
 
