@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "../header/header";
+import Footer from "../footer/footer";
 
 function SignUpForm() {
   const [jobHiring, setJobHiring] = useState("");
@@ -15,34 +17,36 @@ function SignUpForm() {
     }
   }
   return (
-    <div className="login-form">
-      <h2>Sign Up</h2>
-      <h2>Please Enter your Account details</h2>
-      <form action="">
-        <input type="text" placeholder="Full Name" name="" id="" required />
-        <input type="email" placeholder="Email" name="email" required />
-        <select
-          value={jobHiring}
-          onChange={(e) => setJobHiring(e.target.value)}
-        >
-          <option value="">Select Job Type</option>
-          <option value="hiring">Hiring</option>
-          <option value="jobseeker">Jobseeker</option>
-        </select>
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-          required
-        />
-      </form>
+    <>
+      <div className="login-form">
+        <h2>Sign Up</h2>
+        <h2>Please Enter your Account details</h2>
+        <form action="">
+          <input type="text" placeholder="Full Name" name="" id="" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <select
+            value={jobHiring}
+            onChange={(e) => setJobHiring(e.target.value)}
+          >
+            <option value="">Select Job Type</option>
+            <option value="hiring">Hiring</option>
+            <option value="jobseeker">Jobseeker</option>
+          </select>
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </form>
 
-      <button onClick={Click}>login</button>
+        <button onClick={Click}>login</button>
 
-      <div className="create-account">
-        <Link to="/login">Already have an account</Link>
+        <div className="create-account">
+          <Link to="/login">Already have an account</Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

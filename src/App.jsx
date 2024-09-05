@@ -5,7 +5,7 @@ import Job from "./page/jobs/Jobs";
 import Company from "./component/company/company";
 import CompanyIn from "./component/company/companyIn";
 import Hiring from "./page/hiring/hiring";
-import Login from "./component/login";
+import LoginRegister from "./component/loginRegister/loginRegister";
 import Signup from "./component/signup";
 import HiringJob from "./page/hiring/page/hiringjob";
 import HiringCompany from "./page/hiring/page/hiringcom";
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/job" element={<Job />} />
           <Route path="/company" element={<Company />} />
           <Route path="/companyin" element={<CompanyIn />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<LoginRegister />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/homein" element={<HomeIn />} />
           <Route path="/hiring" element={<Hiring />} />
